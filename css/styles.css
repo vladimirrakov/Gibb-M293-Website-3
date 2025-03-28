@@ -83,6 +83,24 @@ body {
   color: #000;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+table thead th {
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
 /* Header */
 
 header {
@@ -313,15 +331,22 @@ header {
 }
 
 .video-frame {
-  border: red 3px solid;
+  border: orange 3px solid;
   width: 100%;
-  padding: 0 0 2em 0;
   text-align: center;
 }
 
 .video-frame iframe {
-  width: 75%;
+  border: green 3px solid;
+  width: 80%;
   height: calc(50vw * 9 / 16); /* Maintain a 16:9 aspect ratio */
+}
+
+@media (max-width: 769px) {
+  .video-frame iframe {
+    width: 100%;
+    height: calc(100vw * 7 / 16); /* Maintain a 16:9 aspect ratio */
+  }
 }
 
 /* Services */
@@ -501,8 +526,70 @@ footer {
   }
 }
 
-/* Blog */
+.footer-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
 
+/* Impressum */
+
+.impressum {
+  border: none;
+  /* color: white; */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+.boss-image {
+  width: 250px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Blog */
 
 /* Blog Post */
 

@@ -86,7 +86,7 @@
     <div class="testimonials-section">
         <h3>Testimonials</h3>
         <blockquote>
-            <p>"Die Zusammenarbeit mit Vladi war hervorragend. Er hat für unser Modelabel
+            <p>"Die Zusammenarbeit mit Elias war hervorragend. Er hat für unser Modelabel
                 eine hochfunktionale E-Commerce-Plattform entwickelt. Besonders beeindruckt
                 hat uns seine Fähigkeit, komplexe Anforderungen in eine intuitive
                 Benutzererfahrung zu übersetzen."</p>
@@ -104,23 +104,22 @@
 
     <footer>
         <div>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/school/ict-berufsbildung-schweiz/" target="_blank"
+                class="footer-link">LinkedIn</a>
         </div>
         <div class="logo">
             <p>&lt;digital&gt;</p>
         </div>
         <div>
-            <a href="#">Impressum</a>
+            <!-- Trigger/Open The Modal -->
+            <p id="myBtn" class="footer-link">Impressum-Modal</p>
         </div>
     </footer>
 
-</body>
+    <div id="modal-container"></div>
 
-<script>
-    document.querySelector('.hamburger').addEventListener('click', function () {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
-    });
-</script>
+    <script src="/js/scripts.js"></script>
+
+</body>
 
 </html>

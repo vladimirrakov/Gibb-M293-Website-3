@@ -51,14 +51,56 @@
         <div>
             <h3>Adresse</h3>
             <p>Papiermühlestrasse 85, 3014 Bern</p>
-            <a href="https://maps.app.goo.gl/fXB7u3vDoac2awaE9" target="_blank" rel="noopener noreferrer">Zur Google-Karte klicken</a>
+            <a href="https://maps.app.goo.gl/fXB7u3vDoac2awaE9" target="_blank" rel="noopener noreferrer">Zur
+                Google-Karte klicken</a>
+        </div>
+
+        <div>
+            <h3>Öffnungszeiten</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Öffnungszeiten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Montag</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dienstag</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mittwoch</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Donnerstag</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Freitag</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td>Geschlossen</td>
+                    </tr>
+                    <tr>
+                        <td>Sonntag</td>
+                        <td>Geschlossen</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="map-container">
             <h3>Unsere Lage</h3>
             <iframe class="map-iframe" title="Google Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.845978860185!2d7.464359941868927!3d46.96248957449629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39fc8d775553%3A0x7a6cbf0118342d9d!2sWankdorf%20Shopping%20Mall!5e0!3m2!1sen!2sch!4v1743147308670!5m2!1sen!2sch"
-                >
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.845978860185!2d7.464359941868927!3d46.96248957449629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39fc8d775553%3A0x7a6cbf0118342d9d!2sWankdorf%20Shopping%20Mall!5e0!3m2!1sen!2sch!4v1743147308670!5m2!1sen!2sch">
             </iframe>
         </div>
     </div>
@@ -73,23 +115,22 @@
 
     <footer>
         <div>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/school/ict-berufsbildung-schweiz/" target="_blank"
+                class="footer-link">LinkedIn</a>
         </div>
         <div class="logo">
             <p>&lt;digital&gt;</p>
         </div>
         <div>
-            <a href="#">Impressum</a>
+            <!-- Trigger/Open The Modal -->
+            <p id="myBtn" class="footer-link">Impressum-Modal</p>
         </div>
     </footer>
+    
+    <div id="modal-container"></div>
+
+    <script src="/js/scripts.js"></script>
 
 </body>
-
-<script>
-    document.querySelector('.hamburger').addEventListener('click', function () {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
-    });
-</script>
 
 </html>

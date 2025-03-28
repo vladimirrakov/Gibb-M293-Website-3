@@ -81,23 +81,22 @@
 
     <footer>
         <div>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/school/ict-berufsbildung-schweiz/" target="_blank"
+                class="footer-link">LinkedIn</a>
         </div>
         <div class="logo">
             <p>&lt;digital&gt;</p>
         </div>
         <div>
-            <a href="#">Impressum</a>
+            <!-- Trigger/Open The Modal -->
+            <p id="myBtn" class="footer-link">Impressum-Modal</p>
         </div>
     </footer>
 
-</body>
+    <div id="modal-container"></div>
 
-<script>
-    document.querySelector('.hamburger').addEventListener('click', function () {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
-    });
-</script>
+    <script src="/js/scripts.js"></script>
+
+</body>
 
 </html>
