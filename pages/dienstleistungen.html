@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienstleistungen - digital</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div class="nav">
+            <div class="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Start</a></li>
+                <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                <li><a href="/pages/dienstleistungen.html" class="active">Dienstleistungen</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="services-section">
+        <h1>Dienstleistungen</h1>
+        <p>Ich biete massgeschneiderte Dienstleistungen an, um Ihre digitalen Projekte erfolgreich umzusetzen.</p>
+        <div class="services-container">
+            <div class="services-item">
+                <h4>⭢ Website- und Software-Entwicklung</h4>
+                <p>Massgeschneiderte Web- und Softwarelösungen für digitale Projekte.</p>
+            </div>
+            <div class="services-item">
+                <h4>⭢ Digitales Marketing</h4>
+                <p>Marketing-Lösungen für Social Media, um Reichweite zu maximieren.</p>
+            </div>
+            <div class="services-item">
+                <h4>⭢ SEO</h4>
+                <p>Optimierung für Suchmaschinen, um bessere Google-Rankings zu erzielen.</p>
+            </div>
+            <div class="services-item">
+                <h4>⭢ Projektmanagement</h4>
+                <p>Effiziente Planung und Umsetzung digitaler Projekte.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h3>Wie kann ich Ihnen helfen?</h3>
+        <div class="video-container">
+            <p>Ich möchte Sie gerne dabei unterstützen, eine digitale Lösung für Ihre 
+                geschäftlichen Anforderungen zu finden. Dazu könnte ich Sie zum Beispiel 
+                bei der Erstellung einer Website begleiten oder Ihre Social-Media-Konten
+                 so gestalten, dass sie Kunden anziehen. Auch bei der Optimierung Ihrer
+                  SEO für bessere Google-Suchergebnisse oder bei der Unterstützung Ihrer
+                   IT-Projekte würde ich Ihnen gerne behilflich sein.</p>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/S7kyyKerAog?si=_Fq66MNBcHLivDIm"
+                    title="YouTube Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <p>Let’s talk!</p>
+        <div class="contact-buttons-block">
+            <button>Email</button>
+            <button>Telefon</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div>
+            <a href="#">Impressum</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+    });
+</script>
+
+</html>

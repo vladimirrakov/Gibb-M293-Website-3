@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - digital</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div class="nav">
+            <div class="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Start</a></li>
+                <li><a href="/pages/portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="/pages/dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="portfolio-section">
+        <h1>Portfolio</h1>
+        <p>Ich unterstütze KMU bei ihren Bemühungen, digitale Lösungen für verschiedene Aufgaben
+            des Tagesgeschäfts zu nutzen.</p>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="/images/hack-capital-uv5_bsypFUM-unsplash.jpg" alt="E-Commerce">
+                <h4>E-Commerce Plattform für Modehändler</h4>
+                <p>Entwicklung einer massgeschneiderten E-Commerce-Website mit integriertem
+                    Warenmanagement.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/adem-ay-Tk9m_HP4rgQ-unsplash.jpg" alt="Social Media">
+                <h4>Social Media Kampagne für ein Fitnessstudio</h4>
+                <p>Einrichtung von Instagram- und YouTube-Accounts mit Pay-per-Click-Werbung.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/1981-digital-oMe_FjZnHGU-unsplash.jpg" alt="SEO">
+                <h4>SEO-Optimierung für einen Online-Blog</h4>
+                <p>Technische und inhaltliche Optimierung eines Fachblogs für bessere
+                    Google-Rankings.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="/images/juno-jo-Um4iB59lS2A-unsplash.jpg" alt="Redesign">
+                <h4>Redesign eines Unternehmensportals</h4>
+                <p>Leitung eines Projekts zur Neugestaltung eines Unternehmensportals mit
+                    CRM-Integration.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <p>Let’s talk!</p>
+        <div class="contact-buttons-block">
+            <button>Email</button>
+            <button>Telefon</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div>
+            <a href="#">Impressum</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+    });
+</script>
+
+</html>

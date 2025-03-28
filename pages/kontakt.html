@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - digital</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div class="nav">
+            <div class="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Start</a></li>
+                <li><a href="/pages/portfolio.html">Portfolio</a></li>
+                <li><a href="/pages/dienstleistungen.html">Dienstleistungen</a></li>
+                <li><a href="/pages/blog.html">Blog</a></li>
+                <li><a href="/pages/kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div>
+        <h1>Kontakt</h1>
+        <p>Wir freuen uns darauf, von Ihnen zu hören.
+            Nehmen Sie noch heute Kontakt mit uns auf!</p>
+
+        <div class="how-the-work-begins">
+            <h2>Wie die Arbeit beginnt</h2>
+            <p>Wenn Sie Ihren Fall besprechen möchten, folgen Sie diese einfachen
+                Schritte:</p>
+            <ol>
+                <li>Melden Sie sich.</li>
+                <li>Wir werden uns mit Ihnen in Verbindung setzen.</li>
+                <li>Wir werden einen online-Termin vereinbaren.</li>
+                <li>Dann besprechen wir Ihren Fall.</li>
+                <li>Wir bereiten für Sie ein Angebot vor.</li>
+                <li>Sie werden sie prüfen und entscheiden, ob Sie
+                    mit uns zusammenarbeiten möchten.</li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>Adresse</h3>
+            <p>Papiermühlestrasse 85, 3014 Bern</p>
+            <a href="https://maps.app.goo.gl/fXB7u3vDoac2awaE9" target="_blank" rel="noopener noreferrer">Zur Google-Karte klicken</a>
+        </div>
+
+        <div class="map-container">
+            <h3>Unsere Lage</h3>
+            <iframe class="map-iframe" title="Google Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.845978860185!2d7.464359941868927!3d46.96248957449629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39fc8d775553%3A0x7a6cbf0118342d9d!2sWankdorf%20Shopping%20Mall!5e0!3m2!1sen!2sch!4v1743147308670!5m2!1sen!2sch"
+                >
+            </iframe>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <p>Let’s talk!</p>
+        <div class="contact-buttons-block">
+            <button>Email</button>
+            <button>Telefon</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="logo">
+            <p>&lt;digital&gt;</p>
+        </div>
+        <div>
+            <a href="#">Impressum</a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the active class to show/hide the menu
+    });
+</script>
+
+</html>
