@@ -4,9 +4,24 @@
 
 /* Hamburger Menu */
 
-document.querySelector(".hamburger").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
-  navLinks.classList.toggle("active"); // Toggle the active class to show/hide the menu
+  const menuItems = document.querySelectorAll(".nav-links a");
+
+  // Toggle menu on hamburger click
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
+  // Close menu when clicking a menu item
+  menuItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
 });
 
 /* Modal */
@@ -27,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Add click event listener directly to the button
       btn.addEventListener("click", function (event) {
-        console.log("Modal button clicked"); // Debug log
-
         // Make sure the modal is displayed
         modal.style.display = "block";
         modal.style.position = "fixed";
@@ -54,4 +67,54 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error("Error loading modal:", error));
+});
+
+/* Contact Form */
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+  let isValid = true;
+
+  // Name validation: Only letters
+  const name = document.getElementById("name").value.trim();
+  const nameError = document.getElementById("nameError");
+  if (!/^[a-zA-Z\s]+$/.test(name)) {
+    nameError.textContent =
+      "Der Name darf nur Buchstaben und Leerzeichen enthalten.";
+    isValid = false;
+  } else {
+    nameError.textContent = "";
+  }
+
+  // Email validation: Basic email format
+  const email = document.getElementById("email").value.trim();
+  const emailError = document.getElementById("emailError");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailError.textContent = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
+    isValid = false;
+  } else {
+    emailError.textContent = "";
+  }
+
+  // Message validation: No code injections and max 500 characters
+  const message = document.getElementById("message").value.trim();
+  const messageError = document.getElementById("messageError");
+  if (message.length > 500) {
+    messageError.textContent =
+      "Die Nachricht darf maximal 500 Zeichen lang sein.";
+    isValid = false;
+  } else if (/<\/?[a-z][\s\S]*>/i.test(message)) {
+    messageError.textContent = "Die Nachricht darf keinen HTML-Code enthalten.";
+    isValid = false;
+  } else {
+    messageError.textContent = "";
+  }
+
+  // If all validations pass, submit the form or display success
+  if (isValid) {
+    alert("Formular erfolgreich abgeschickt!");
+    form.reset(); // Optionally reset the form
+  }
 });

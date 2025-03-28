@@ -48,6 +48,33 @@
             </ol>
         </div>
 
+        <div class="contact-form">
+            <h3>Kontaktformular</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Geben Sie Ihren Namen ein" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein"
+                        required>
+                    <div class="error" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" placeholder="Geben Sie Ihre Nachricht ein" rows="5"
+                        required></textarea>
+                    <div class="error" id="messageError"></div>
+                </div>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+
         <div>
             <h3>Adresse</h3>
             <p>Papiermühlestrasse 85, 3014 Bern</p>
@@ -108,8 +135,8 @@
     <div class="contact-section">
         <p>Let’s talk!</p>
         <div class="contact-buttons-block">
-            <button>Email</button>
-            <button>Telefon</button>
+            <button onclick="window.location.href='mailto:hello@digital.ch';">Email</button>
+            <button onclick="window.location.href='tel:+41 79 123 45 67';">Telefon</button>
         </div>
     </div>
 
@@ -123,10 +150,10 @@
         </div>
         <div>
             <!-- Trigger/Open The Modal -->
-            <p id="myBtn" class="footer-link">Impressum-Modal</p>
+            <p id="myBtn" class="footer-link">impressum</p>
         </div>
     </footer>
-    
+
     <div id="modal-container"></div>
 
     <script src="/js/scripts.js"></script>
